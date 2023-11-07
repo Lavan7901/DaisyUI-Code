@@ -1,0 +1,58 @@
+.App{
+    background: linear-gradient(to bottom, #730477,#8807b3); 
+    min-height: 100vh;
+    font-family:"Times New Roman";
+}
+.card {
+    margin-top: 50px;
+    width: 900px;
+  }
+  .error-message{
+    color:rgb(238, 61, 61);
+
+  }
+  .language-label {
+    margin-right: 20px;
+  }  
+  .radio-button{
+    padding-left: 2.5rem;
+  }
+
+ @media screen and (max-width: 820px){
+    .card{
+      width: 450px;
+    }
+    .grid-cols-2{
+      grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .radio-button{
+      padding-left: 1.5rem;
+    }
+  
+  }
+  @media screen and (max-width: 500px){
+    .App{
+      background: white;
+    }
+    .radio-button{
+      padding-left: 0.5rem;
+    }
+    .mr-20{
+      margin-right: 0px;
+    }
+    
+  }
+  @media screen and (max-width: 300px){
+    .card{
+      width: 350px;
+    }
+    .grid-cols-2{
+      grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .card-actions .pr-10{
+      padding-right: 0.5rem;
+    }
+    .radio-button{
+      padding-left: 0.5rem;
+    }
+  }
